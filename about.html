@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <title>About | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+   <!-- Navigation -->
+   <nav>
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html">MyPortfolio</a>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="media-icons">
+            <!-- Social Media Icons or other media links -->
+        </div>
+        <div class="menu-btn">☰</div>
+    </div>
+</nav>
+
+  <section class="about home" id="about">
+    <div class="content">
+      <div class="title"><span>About Me</span></div>
+      <div class="about-details">
+        <div class="left">
+          <img src="Images/1.jpg" alt="photo" />
+        </div>
+        <div class="right">
+          <div class="topic">Designing Is My Passion</div>
+          <p>
+            Designing is more than just a profession; it's a passion that fuels creativity and innovation. It involves a deep understanding of aesthetics, functionality, and user experience, allowing designers to transform abstract ideas into tangible, visually appealing solutions. Whether it's crafting a brand identity, developing a user-friendly interface, or creating an architectural masterpiece, design requires a blend of technical skills and artistic vision. The passion for design drives individuals to continuously learn and adapt, pushing the boundaries of what's possible and creating impactful, meaningful work that resonates with people on an emotional level. For many, the joy of designing lies in the ability to solve problems creatively and to bring beauty and order to the world around them.
+          </p>
+          <div class="button">
+            <a href="Images/karthikmain.pdf" download="Karthik_Resume.pdf" class="download-btn">Download CV</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+
+  <footer>
+    <div class="text">
+      <span>Created By <a href="#">CodingLab</a> | &#169; 2024 All Rights Reserved</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // JavaScript to change navigation bar color on scroll
+    window.addEventListener('scroll', function() {
+      const nav = document.querySelector('nav');
+      if (window.scrollY > 50) {
+        nav.classList.add('sticky');
+      } else {
+        nav.classList.remove('sticky');
+      }
+    });
+  </script>
+</body>
+</html>

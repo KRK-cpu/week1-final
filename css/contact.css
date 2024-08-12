@@ -1,0 +1,233 @@
+/* Base Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+/* Navbar Styling */
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 998;
+  transition: all 0.3s ease;
+  font-family: 'Ubuntu', sans-serif;
+}
+nav.sticky {
+  background: #88D66C;
+  padding: 13px 0;
+}
+nav .navbar {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+nav .navbar .logo a {
+  font-weight: 500;
+  font-size: 35px;
+  color: #73BBA3;
+}
+nav.sticky .navbar .logo a {
+  color: #fff;
+}
+nav .navbar .menu {
+  display: flex;
+  position: relative;
+}
+nav .navbar .menu li {
+  list-style: none;
+  margin: 0 8px;
+}
+.navbar .menu a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #0E2431;
+  padding: 6px 0;
+  transition: all 0.4s ease;
+}
+.navbar .menu a:hover {
+  color: #73BBA3;
+}
+nav.sticky .menu a {
+  color: #FFF;
+}
+nav.sticky .menu a:hover {
+  color: #0E2431;
+}
+.navbar .media-icons a {
+  color: #73BBA3;
+  font-size: 18px;
+  margin: 0 6px;
+}
+nav.sticky .media-icons a {
+  color: #FFF;
+}
+
+/* Side Navigation Menu Button CSS */
+nav .menu-btn {
+  position: absolute;
+  color: #73BBA3;
+  right: 30px;
+  top: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: none;
+}
+nav.sticky .menu-btn {
+  color: #FFF;
+}
+
+/* Contact Section Styling */
+.contact {
+  padding: 60px 0;
+  background: #F4F4F4;
+  font-family: 'Poppins', sans-serif;
+}
+.contact .content {
+  width: 90%;
+  margin: 0 auto;
+}
+.contact .title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.contact .title h1 {
+  font-size: 36px;
+  color: #0E2431;
+  font-weight: 600;
+}
+.contact .contact-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.contact .contact-info, .contact-form {
+  flex: 1;
+  min-width: 300px;
+}
+.contact .contact-info h2, .contact .contact-form h2 {
+  font-size: 28px;
+  color: #0E2431;
+}
+.contact .contact-info p {
+  font-size: 16px;
+  color: #0E2431;
+}
+.contact .contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+.contact .contact-info li {
+  margin-bottom: 10px;
+}
+.contact .contact-info a {
+  color: #73BBA3;
+  text-decoration: none;
+}
+.contact .contact-info a:hover {
+  text-decoration: underline;
+}
+.contact .contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+.contact .contact-form label {
+  margin-top: 10px;
+}
+.contact .contact-form input, .contact .contact-form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.contact .contact-form button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #73BBA3;
+  color: #FFF;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.contact .contact-form button:hover {
+  background-color: #5d9e82;
+}
+
+/* Footer Styling */
+footer {
+  background: #0E2431;
+  color: #FFF;
+  padding: 20px 0;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+footer .text {
+  font-size: 14px;
+}
+footer .text a {
+  color: #73BBA3;
+  text-decoration: none;
+}
+footer .text a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .contact .contact-details {
+    flex-direction: column;
+  }
+  .contact .contact-info, .contact .contact-form {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .contact .title h1 {
+    font-size: 28px;
+  }
+  .navbar .menu-btn {
+    display: block;
+  }
+  nav .navbar .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #F4F4F4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  nav .navbar .menu.active {
+    display: flex;
+  }
+  nav .navbar .menu li {
+    margin: 10px 0;
+    text-align: center;
+  }
+  nav .navbar .menu a {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact .title h1 {
+    font-size: 24px;
+  }
+  .contact .contact-info h2, .contact .contact-form h2 {
+    font-size: 24px;
+  }
+  .contact .contact-form button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}

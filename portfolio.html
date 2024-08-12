@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - My Portfolio</title>
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">MyPortfolio</a>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="media-icons">
+                <!-- Social Media Icons or other media links -->
+            </div>
+            <div class="menu-btn">☰</div>
+        </div>
+    </nav>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+        <div class="container">
+            <div class="title">
+                <h1>My Portfolio</h1>
+            </div>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Chef On Call</h3>
+                    <p>
+                        <strong>Summary:</strong><br>
+                        • Designed and implemented an online platform to facilitate the booking of professional chefs for home services, enhancing accessibility, convenience, and efficiency for users. The system features a user-friendly web interface and ensures secure and transparent transactions.<br>
+                        • Developed and implemented the "Chef on Call" online service system using JAVA, JSP, HTML, CSS, and MySQL on Eclipse for Windows 7/10, enhancing user convenience and transaction security, with plans for national expansion, email, messaging, and mobile access functionalities.<br>
+                        • Future Scope: Plans to expand the system to a national level, integrate email and messaging functionalities for chef-user communication, and enable mobile access to case details and progress updates.
+                    </p>
+                    <a href="https://www.example.com" target="_blank" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Exploring Deep Learning Architecture for Crops and Weeds Identification</h3>
+                    <p>
+                        <strong>Summary:</strong><br>
+                        • Developed and implemented deep learning models, including CNN and EfficientNet, for classifying crops and weeds, achieving 91% accuracy with CNN and 99% with EfficientNet B3 and B4.<br>
+                        • Conducted comprehensive analysis on computational efficiency and model complexity, providing insights for practical agricultural applications.<br>
+                        • Authored a research paper detailing these findings, slated for presentation at the 2024 3rd International Conference on Artificial Intelligence for Internet of Things (AIIoT).
+                    </p>
+                    <a href="https://www.example.com" target="_blank" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Sample YouTube Webpage</h3>
+                    <p>
+                        <strong>Summary:</strong><br>
+                        • Created a sample webpage designed to emulate the look and feel of YouTube, showcasing skills in HTML, CSS, and JavaScript.<br>
+                        • Implemented features such as video thumbnails, a search bar, and a responsive layout, providing a user-friendly interface.<br>
+                        • Focused on replicating essential elements of the YouTube user experience, including video recommendations and channel layout.
+                    </p>
+                    <a href="https://www.example.com" target="_blank" class="btn">View Project</a>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="text">
+            <span>&copy; 2024 MyPortfolio. All rights reserved.</span>
+            <span> | </span>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+    <!-- <script src="js/portfolio.js"></script> -->
+    <script src="script.js"></script>
+    <script>
+        // JavaScript to change navigation bar color on scroll
+        window.addEventListener('scroll', function() {
+          const nav = document.querySelector('nav');
+          if (window.scrollY > 50) {
+            nav.classList.add('sticky');
+          } else {
+            nav.classList.remove('sticky');
+          }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - My Portfolio</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">MyPortfolio</a>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="media-icons">
+                <!-- Social Media Icons or other media links -->
+            </div>
+            <div class="menu-btn">☰</div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="content">
+            <div class="title">
+                <span>Contact Me</span>
+            </div>
+            <div class="contact-details">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>
+                        If you have any questions, want to discuss a project, or just want to say hello, feel free to reach out!
+                    </p>
+                    <ul>
+                        <li><strong>Email:</strong> <a href="mailto:youremail@example.com">youremail@example.com</a></li>
+                        <li><strong>Phone:</strong> +123 456 7890</li>
+                        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn Profile</a></li>
+                        <li><strong>GitHub:</strong> <a href="https://github.com/yourusername" target="_blank">GitHub Profile</a></li>
+                    </ul>
+                </div>
+                <div class="contact-form">
+                    <h2>Contact Form</h2>
+                    <form id="contactForm">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                    <div id="responseMessage" style="display: none; margin-top: 10px; color: green;">
+                        Message sent successfully!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="text">
+            <span>&copy; 2024 MyPortfolio. All rights reserved.</span>
+            <span> | </span>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+    <script src="js/contact.js"></script>
+
+    <script src="script.js"></script>
+    <script>
+        // JavaScript to handle form submission and show the "Message Sent" response
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent the default form submission
+            
+            // Display the success message
+            document.getElementById('responseMessage').style.display = 'block';
+        });
+
+        // JavaScript to change navigation bar color on scroll
+        window.addEventListener('scroll', function() {
+          const nav = document.querySelector('nav');
+          if (window.scrollY > 50) {
+            nav.classList.add('sticky');
+          } else {
+            nav.classList.remove('sticky');
+          }
+        });
+    </script>
+</body>
+</html>
